@@ -28,7 +28,7 @@ LABEL       author="YuyuLuna" maintainer="admin@mail.yuyucloud.com"
 RUN apt-get update -y \
     && apt-get -y install openjdk-12-jre curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
     && adduser -D -h /home/container container
-
+RUN echo "Asia/Taipei" > /etc/timezone;dpkg-reconfigure -f noninteractive tzdata
 USER container
 ENV  USER=container HOME=/home/container
 ENV TZ Asia/Taipei
