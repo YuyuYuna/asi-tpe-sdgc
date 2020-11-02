@@ -7,6 +7,7 @@ RUN apt-get update -y \
  && useradd -d /home/container -m container
 
 RUN echo "Asia/Taipei" > /etc/timezone;dpkg-reconfigure -f noninteractive tzdata
+RUN timedatectl set-timezone Asia/Taipei
 
 USER container
 ENV  USER=container HOME=/home/container
