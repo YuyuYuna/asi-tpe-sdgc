@@ -26,10 +26,8 @@ FROM ubuntu:18.04
 LABEL       author="YuyuLuna" maintainer="admin@mail.yuyucloud.com"
 
 RUN apt-get update -y \
-    && apt -y install openjdk-11-jre curl ca-certificates openssl git tar bash sqlite fontconfig iproute2 \
+    && apt -y install openjdk-11-jre apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
     && adduser -D -h /home/container container
-
-RUN echo "Asia/Taipei" > /etc/timezone;dpkg-reconfigure -f noninteractive tzdata
 
 USER container
 ENV  USER=container HOME=/home/container
