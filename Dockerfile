@@ -1,6 +1,6 @@
 FROM        shipilev/openjdk-shenandoah
 
-LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
+LABEL       author="YuyuLuna" maintainer="admin@mail.yuyucloud.com"
 
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
