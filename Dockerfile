@@ -1,4 +1,4 @@
-FROM        shipilev/openjdk-shenandoah:11
+FROM        shipilev/openjdk-shenandoah:8
 
 LABEL       author="YuyuLuna" maintainer="admin@mail.yuyucloud.com"
 
