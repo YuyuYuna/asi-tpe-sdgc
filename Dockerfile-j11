@@ -1,4 +1,4 @@
-FROM        openjdk:11.0.10-jre-slim
+FROM        quay.io/pterodactyl/core:java:11
 
 LABEL       author="YuyuLuna" maintainer="admin@mail.yuyucloud.com"
 
