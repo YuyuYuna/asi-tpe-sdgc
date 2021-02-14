@@ -1,4 +1,4 @@
-FROM        quay.io/pterodactyl/core:java:11
+FROM        shipilev/openjdk:11
 
 LABEL       author="YuyuLuna" maintainer="admin@mail.yuyucloud.com"
 
